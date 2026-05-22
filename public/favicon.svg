@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EDGE Agriculture">
+  <rect width="64" height="64" rx="12" fill="#1f6f3b"/>
+  <path d="M19 20h19v7H27v5h10v7H27v5h12v7H19V20Z" fill="#fff"/>
+  <path d="M43 15c5 3 7 8 5 14-6-1-10-4-12-10 3-3 5-4 7-4Z" fill="#f2bc73"/>
+  <path d="M38 31c6 1 10 5 11 11-7 2-13 0-17-6 2-4 4-5 6-5Z" fill="#8fca84"/>
+</svg>
