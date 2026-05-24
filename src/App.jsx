@@ -11,6 +11,7 @@ import FaqPage from './pages/FaqPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import LegalPage from './pages/LegalPage.jsx'
 import NurseryPage from './pages/NurseryPage.jsx'
+import PlantersPotsPage from './pages/PlantersPotsPage.jsx'
 import PortfolioPage from './pages/PortfolioPage.jsx'
 import ProductDetailPage from './pages/ProductDetailPage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/products/:category" element={<ProductsPage />} />
           <Route path="/products/:category/:productId" element={<ProductDetailPage />} />
           <Route path="/nursery" element={<NurseryPage />} />
+          <Route path="/planters-pots" element={<PlantersPotsPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
