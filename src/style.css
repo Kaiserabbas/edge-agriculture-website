@@ -485,6 +485,43 @@ summary:focus-visible {
   color: rgba(255, 255, 255, 0.76);
 }
 
+/* Nursery Navigation */
+.nursery-nav-container {
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nursery-tabs {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nursery-tab {
+  padding: 16px 24px;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nursery-tab:hover {
+  color: var(--green-strong);
+  background: var(--mist);
+}
+
+.nursery-tab.is-active {
+  border-bottom-color: var(--green-strong);
+  color: var(--green-strong);
+}
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -1505,6 +1542,11 @@ time {
 
   .section {
     padding: 66px 0;
+  }
+
+  .nursery-tab {
+    padding: 14px 16px;
+    font-size: 14px;
   }
 
   .section-header,

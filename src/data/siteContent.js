@@ -49,7 +49,6 @@ export const navItems = [
   { to: '/services', label: 'services' },
   { to: '/products', label: 'products' },
   { to: '/nursery', label: 'nursery' },
-  { to: '/planters-pots', label: 'plantersAndPots' },
   { to: '/portfolio', label: 'portfolio' },
   { to: '/blog', label: 'blog' },
   { to: '/contact', label: 'contact' },

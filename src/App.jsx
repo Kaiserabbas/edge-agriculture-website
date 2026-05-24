@@ -38,7 +38,7 @@ export default function App() {
           <Route path="/products/:category" element={<ProductsPage />} />
           <Route path="/products/:category/:productId" element={<ProductDetailPage />} />
           <Route path="/nursery" element={<NurseryPage />} />
-          <Route path="/planters-pots" element={<PlantersPotsPage />} />
+          <Route path="/nursery/planters-pots" element={<PlantersPotsPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />

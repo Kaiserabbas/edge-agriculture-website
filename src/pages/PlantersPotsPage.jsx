@@ -1,12 +1,14 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import usePageMeta from '../components/usePageMeta.js'
 import { useLocale } from '../context/LocaleContext.jsx'
 
 export default function PlantersPotsPage() {
-  const { text } = useLocale()
+  const { text, label } = useLocale()
   const [selectedImage, setSelectedImage] = useState(null)
+  const location = useLocation()
 
   usePageMeta(
     { en: 'Planters & Pots', ar: 'أصص وأحواض النباتات' },
@@ -50,6 +52,26 @@ export default function PlantersPotsPage() {
         ctaTo="/contact"
         ctaLabel={{ en: 'Get a quote', ar: 'اطلب عرض سعر' }}
       />
+
+      {/* Nursery Tabs Navigation */}
+      <div className="nursery-nav-container">
+        <div className="container">
+          <nav className="nursery-tabs" aria-label="Nursery sections">
+            <Link 
+              to="/nursery" 
+              className={`nursery-tab ${location.pathname === '/nursery' ? 'is-active' : ''}`}
+            >
+              {label('search')} {label('inventory') || 'Plant Inventory'}
+            </Link>
+            <Link 
+              to="/nursery/planters-pots" 
+              className={`nursery-tab ${location.pathname === '/nursery/planters-pots' ? 'is-active' : ''}`}
+            >
+              {label('plantersAndPots') || 'Planters & Pots'}
+            </Link>
+          </nav>
+        </div>
+      </div>
 
       {/* Pots Section */}
       <section className="section">
