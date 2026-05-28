@@ -787,10 +787,39 @@ summary:focus-visible {
 /* Pinterest-style masonry grid */
 .pinterest-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px , 1fr));
-  gap: auto ;
-  grid-auto-rows: 120px;
-  grid-auto-flow: dense;  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+}
+
+.pinterest-grid .gallery-item {
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pinterest-grid .gallery-item:nth-child(2n) {
+  min-height: 360px;
+}
+
+.pinterest-grid .gallery-item:nth-child(3n) {
+  min-height: 340px;
+}
+
+.pinterest-grid .gallery-item:nth-child(5n) {
+  min-height: 380px;
+}
+
+.pinterest-grid .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pinterest-grid .gallery-item:hover img {
+  transform: scale(1.05);
 }
 
 .pinterest-item {
@@ -1483,6 +1512,10 @@ time {
   .blog-grid,
   .portfolio-strip,
   .gallery-grid,
+  .pinterest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .pinterest-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

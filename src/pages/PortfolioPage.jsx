@@ -35,7 +35,7 @@ export default function PortfolioPage() {
             eyebrow={{ en: 'Project gallery', ar: 'معرض المشاريع' }}
             title={{ en: 'Residential, commercial and poolside work', ar: 'أعمال سكنية وتجارية وبجانب المسابح' }}
           />
-          <div className="gallery-grid">
+          <div className="pinterest-grid">
             {portfolioProjects.map((project) => (
               <article className="gallery-item" key={project.id}>
                 <img src={project.image} alt={text(project.title)} loading="lazy" />

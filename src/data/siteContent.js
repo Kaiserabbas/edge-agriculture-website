@@ -1,4 +1,5 @@
 const image = (name) => `/images/${name}`
+const projectImage = (name) => `/images/projects/${name}`
 
 export const assets = {
   logo: image('logo-horizontal.png'),
@@ -411,7 +412,7 @@ export const portfolioProjects = [
       en: 'A low-maintenance family garden with shaded seating, turf, and drip irrigation.',
       ar: 'حديقة عائلية سهلة العناية مع جلسة مظللة وعشب وري بالتنقيط.',
     },
-    image: image('14.jpeg'),
+    image: projectImage('1.jpeg'),
   },
   {
     id: 'pool-courtyard',
@@ -421,7 +422,7 @@ export const portfolioProjects = [
       en: 'Planters, palms, lighting, and textured paving around an outdoor pool.',
       ar: 'أحواض ونخيل وإضاءة وأرضيات حول مسبح خارجي.',
     },
-    image: image('8.jpeg'),
+    image: projectImage('5.jpeg'),
   },
   {
     id: 'commercial-entry',
@@ -431,7 +432,159 @@ export const portfolioProjects = [
       en: 'Layered shrubs, palms, seasonal flowers, and clean irrigation access.',
       ar: 'شجيرات ونخيل وزهور موسمية مع وصول واضح للري.',
     },
-    image: image('6.jpeg'),
+    image: projectImage('2.jpeg'),
+  },
+  {
+    id: 'marina-villa',
+    category: { en: 'Residential', ar: 'سكني' },
+    title: { en: 'Dubai Marina Villa Overhaul', ar: 'تطوير فيلا دبي مارينا' },
+    summary: {
+      en: 'Modern pergola, turf zones, and automated drip irrigation for marina-view living.',
+      ar: 'برجولة حديثة ومناطق عشب وري تنقيط آلي لحياة فاخرة.',
+    },
+    image: projectImage('3.jpeg'),
+  },
+  {
+    id: 'rooftop-garden',
+    category: { en: 'Commercial', ar: 'تجاري' },
+    title: { en: 'Rooftop Commercial Garden', ar: 'حديقة سطح تجاري' },
+    summary: {
+      en: 'Elevated planters, palms, and zone lighting for executive rooftop space.',
+      ar: 'أحواض مرتفعة ونخيل وإضاءة منطقة لمساحة السطح التنفيذية.',
+    },
+    image: projectImage('4.jpeg'),
+  },
+  {
+    id: 'palm-jumeirah',
+    category: { en: 'Residential', ar: 'سكني' },
+    title: { en: 'Palm Jumeirah Beach Villa', ar: 'فيلا شاطئية بنخلة جميرا' },
+    summary: {
+      en: 'Salt-tolerant plants, beach-theme pathways, and ocean-view landscaping.',
+      ar: 'نباتات تتحمل الملوحة وممرات بطابع شاطئي وتنسيق يطل على البحر.',
+    },
+    image: projectImage('6.jpeg'),
+  },
+  {
+    id: 'sports-facility',
+    category: { en: 'Commercial', ar: 'تجاري' },
+    title: { en: 'Sports Club Landscape', ar: 'تنسيق نادي رياضي' },
+    summary: {
+      en: 'Expansive turf, accent palms, maintenance-efficient planting, and drainage design.',
+      ar: 'عشب واسع ونخيل للتأكيد وزراعة فعالة وتصميم تصريف.',
+    },
+    image: projectImage('7.jpeg'),
+  },
+  {
+    id: 'villa-entry',
+    category: { en: 'Residential', ar: 'سكني' },
+    title: { en: 'Private Villa Entrance', ar: 'مدخل فيلا خاص' },
+    summary: {
+      en: 'Statement palms, color-coordinated shrubs, and welcoming hardscape design.',
+      ar: 'نخيل بارز وشجيرات منسقة الألوان وتصميم أرضيات مرحب.',
+    },
+    image: projectImage('8.jpeg'),
+  },
+  {
+    image: projectImage('9.jpeg'),
+  },
+  {
+    image: projectImage('10.jpeg'),
+  },
+  {
+    image: projectImage('11.jpeg'),
+  },
+  {
+    image: projectImage('12.jpeg'),
+  },
+  {
+    image: projectImage('13.jpeg'),
+  },
+  {
+    image: projectImage('14.jpeg'),
+  },
+  {
+    image: projectImage('15.jpeg'),
+  },
+  {
+    image: projectImage('16.jpeg'),
+  },
+{
+    image: projectImage('17.jpeg'),
+  },
+  {
+    image: projectImage('18.jpeg'),
+  },
+  {
+    image: projectImage('19.jpeg'),
+  },
+  {
+    image: projectImage('20.jpeg'),
+  },
+  {
+    image: projectImage('21.jpeg'),
+  },
+  {
+    image: projectImage('22.jpeg'),
+  },
+  {
+    image: projectImage('23.jpeg'),
+  },
+  {
+    image: projectImage('24.jpeg'),
+  },
+  {
+    image: projectImage('25.jpeg'),
+  },
+  {
+    image: projectImage('26.jpeg'),
+  },
+  {
+    image: projectImage('27.jpeg'),
+  },
+  {
+    image: projectImage('28.jpeg'),
+  },
+  {
+    image: projectImage('29.jpeg'),
+  },
+  {
+    image: projectImage('30.jpeg'),
+  },
+  {
+    image: projectImage('31.jpeg'),
+  },
+  {
+    image: projectImage('32.jpeg'),
+  },
+  {
+    image: projectImage('33.jpeg'),
+  },
+  {
+    image: projectImage('34.jpeg'),
+  },
+  {
+    image: projectImage('35.jpeg'),
+  },
+  {
+    image: projectImage('36.jpeg'),
+  },
+  {
+    image: projectImage('37.jpeg'),
+  },
+  {
+    image: projectImage('38.jpeg'),
+  },
+  {
+    image: projectImage('39.jpeg'),
+  },
+  {
+    image: projectImage('40.jpeg'),
+  },
+  {
+    image: projectImage('41.jpeg'),
+  },
+  {
+    image: projectImage('42.jpeg'),
   },
 ]
 
