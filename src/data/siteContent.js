@@ -60,7 +60,7 @@ export const contactInfo = {
   email: '',
   contacts: [
     { name: 'Muhammad Naseer', phone: '+971 50 2424666' },
-    { name: 'Muhammad Sadiq', phone: '+971 55 5122626' },
+    { name: 'Muhammad Safeer', phone: '+971 55 5122626' },
     { name: 'Asad Mehmood', phone: '+971 52 7373922' },
   ],
   address: {
