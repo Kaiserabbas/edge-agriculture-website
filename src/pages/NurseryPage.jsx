@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import CategoryChips from '../components/CategoryChips.jsx'
 import Icon from '../components/Icon.jsx'
 import PageHero from '../components/PageHero.jsx'
@@ -12,6 +13,7 @@ export default function NurseryPage() {
   const [active, setActive] = useState('all')
   const [query, setQuery] = useState('')
   const { label, text } = useLocale()
+  const location = useLocation()
 
   usePageMeta(
     { en: 'Plant Nursery Inventory', ar: 'مخزون نباتات المشتل' },
@@ -43,6 +45,26 @@ export default function NurseryPage() {
         ctaTo="/contact"
         ctaLabel={{ en: 'Ask about stock', ar: 'اسأل عن المخزون' }}
       />
+
+      {/* Nursery Tabs Navigation */}
+      <div className="nursery-nav-container">
+        <div className="container">
+          <nav className="nursery-tabs" aria-label="Nursery sections">
+            <Link 
+              to="/nursery" 
+              className={`nursery-tab ${location.pathname === '/nursery' ? 'is-active' : ''}`}
+            >
+              {label('search')} {label('inventory') || 'Plant Inventory'}
+            </Link>
+            <Link 
+              to="/nursery/planters-pots" 
+              className={`nursery-tab ${location.pathname === '/nursery/planters-pots' ? 'is-active' : ''}`}
+            >
+              {label('plantersAndPots') || 'Planters & Pots'}
+            </Link>
+          </nav>
+        </div>
+      </div>
 
       <section className="section">
         <div className="container">

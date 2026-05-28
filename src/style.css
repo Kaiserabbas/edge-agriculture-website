@@ -485,6 +485,43 @@ summary:focus-visible {
   color: rgba(255, 255, 255, 0.76);
 }
 
+/* Nursery Navigation */
+.nursery-nav-container {
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nursery-tabs {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nursery-tab {
+  padding: 16px 24px;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nursery-tab:hover {
+  color: var(--green-strong);
+  background: var(--mist);
+}
+
+.nursery-tab.is-active {
+  border-bottom-color: var(--green-strong);
+  color: var(--green-strong);
+}
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -745,6 +782,138 @@ summary:focus-visible {
 
 .blog-card img {
   aspect-ratio: 5 / 3;
+}
+
+/* Pinterest-style masonry grid */
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px , 1fr));
+  gap: auto ;
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;  
+}
+
+.pinterest-item {
+  position: relative;
+  border-radius: var(--radius);
+  background: #f5f5f5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(34, 48, 41, 0.08);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.pinterest-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(34, 48, 41, 0.16);
+}
+
+.pinterest-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 8px;
+}
+
+/* Pinterest grid variations - alternate some items for organic look */
+.pinterest-item:nth-child(3n + 1) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.pinterest-item:nth-child(5n + 2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.pinterest-item:nth-child(7n + 4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* Image Modal / Lightbox */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.2s ease;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-modal-content {
+  position: relative;
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  animation: scaleIn 0.3s ease;
+  padding-top: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.image-modal-content img {
+  width: auto;
+  max-width: calc(100vw - 40px);
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.image-modal-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+  line-height: 1;
+  z-index: 1001;
+}
+
+.image-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 time {
@@ -1313,7 +1482,8 @@ time {
   .product-grid,
   .blog-grid,
   .portfolio-strip,
-  .gallery-grid {
+  .gallery-grid,
+  .pinterest-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1374,6 +1544,11 @@ time {
     padding: 66px 0;
   }
 
+  .nursery-tab {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
   .section-header,
   .cta-content,
   .split-section,
@@ -1417,6 +1592,12 @@ time {
 
   .blog-row img {
     width: 100%;
+  }
+
+  .pinterest-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    grid-auto-rows: 180px;
   }
 }
 
@@ -1500,7 +1681,8 @@ time {
   .gallery-grid,
   .strength-grid,
   .policy-grid,
-  .mini-product-row {
+  .mini-product-row,
+  .pinterest-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1523,6 +1705,21 @@ time {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pinterest-grid {
+    grid-auto-rows: 200px;
+    gap: 12px;
+  }
+
+  .pinterest-item:nth-child(5n + 2) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .pinterest-item:nth-child(7n + 4) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .footer-bottom {
