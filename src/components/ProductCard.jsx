@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext.jsx'
 import { useLocale } from '../context/LocaleContext.jsx'
-import { formatCurrency } from '../utils.js'
+import AskUsButton from './AskUsButton.jsx'
 import Icon from './Icon.jsx'
+
 
 export default function ProductCard({ product, type = 'product' }) {
   const { addItem } = useCart()
@@ -23,7 +24,7 @@ export default function ProductCard({ product, type = 'product' }) {
         </div>
         {product.botanical && <p className="botanical">{product.botanical}</p>}
         <div className="product-card__footer">
-          <strong>{formatCurrency(product.price)}</strong>
+          <AskUsButton className="product-card__ask" />
           <button
             className="icon-button icon-button--filled"
             type="button"
@@ -43,6 +44,7 @@ export default function ProductCard({ product, type = 'product' }) {
             <Icon name="shoppingCart" size={18} />
           </button>
         </div>
+
       </div>
     </article>
   )

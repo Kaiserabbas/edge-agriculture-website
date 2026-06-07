@@ -4,7 +4,8 @@ import SectionHeader from '../components/SectionHeader.jsx'
 import usePageMeta from '../components/usePageMeta.js'
 import { useCart } from '../context/CartContext.jsx'
 import { useLocale } from '../context/LocaleContext.jsx'
-import { formatCurrency } from '../utils.js'
+import AskUsButton from '../components/AskUsButton.jsx'
+
 
 export default function CartPage() {
   const { items, removeItem, subtotal, updateQuantity } = useCart()
@@ -46,8 +47,8 @@ export default function CartPage() {
                   <img src={item.image} alt={text(item.name)} />
                   <div>
                     <h2>{text(item.name)}</h2>
-                    <p>{formatCurrency(item.price)}</p>
                   </div>
+
                   <div className="quantity-control">
                     <button
                       className="icon-button"
@@ -74,16 +75,13 @@ export default function CartPage() {
               ))}
             </div>
             <aside className="summary-panel">
-              <h2>{label('subtotal')}</h2>
-              <strong>{formatCurrency(subtotal)}</strong>
-              <Link className="button button-primary" to="/checkout">
-                {label('proceedCheckout')}
-                <Icon name="arrowRight" size={18} />
-              </Link>
+              <h2>{label('checkout')}</h2>
+              <AskUsButton />
               <Link className="button button-secondary" to="/products">
                 {label('continueShopping')}
               </Link>
             </aside>
+
           </div>
         )}
       </div>

@@ -5,7 +5,8 @@ import SectionHeader from '../components/SectionHeader.jsx'
 import usePageMeta from '../components/usePageMeta.js'
 import { useCart } from '../context/CartContext.jsx'
 import { useLocale } from '../context/LocaleContext.jsx'
-import { formatCurrency } from '../utils.js'
+import AskUsButton from '../components/AskUsButton.jsx'
+
 
 export default function CheckoutPage() {
   const [sent, setSent] = useState(false)
@@ -74,8 +75,8 @@ export default function CheckoutPage() {
             </form>
 
             <aside className="summary-panel">
-              <h2>{label('subtotal')}</h2>
-              <strong>{formatCurrency(subtotal)}</strong>
+              <h2>{label('checkout')}</h2>
+              <AskUsButton />
               <p>
                 {text({
                   en: 'Payment gateway, COD, and shipping rules can be connected in the next backend phase.',
@@ -83,6 +84,7 @@ export default function CheckoutPage() {
                 })}
               </p>
             </aside>
+
           </div>
         )}
       </div>

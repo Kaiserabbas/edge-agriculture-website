@@ -5,7 +5,8 @@ import usePageMeta from '../components/usePageMeta.js'
 import { useCart } from '../context/CartContext.jsx'
 import { useLocale } from '../context/LocaleContext.jsx'
 import { productCategories, products } from '../data/siteContent.js'
-import { formatCurrency } from '../utils.js'
+import AskUsButton from '../components/AskUsButton.jsx'
+
 
 export default function ProductDetailPage() {
   const { productId } = useParams()
@@ -41,7 +42,10 @@ export default function ProductDetailPage() {
             </Link>
             <h1>{text(product.name)}</h1>
             <p>{text(product.description)}</p>
-            <strong className="detail-price">{formatCurrency(product.price)}</strong>
+            <div className="detail-ask">
+              <AskUsButton />
+            </div>
+
             <ul className="check-list">
               {product.specs.map((spec) => (
                 <li key={text(spec)}>
@@ -51,7 +55,7 @@ export default function ProductDetailPage() {
               ))}
             </ul>
             <button
-              className="button button-primary"
+              className="button button-secondary"
               type="button"
               onClick={() =>
                 addItem({
@@ -68,6 +72,7 @@ export default function ProductDetailPage() {
               {label('addToCart')}
               <Icon name="shoppingCart" size={18} />
             </button>
+
           </div>
         </div>
       </section>
