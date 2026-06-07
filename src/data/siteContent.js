@@ -2,8 +2,9 @@ const image = (name) => `/images/${name}`
 const projectImage = (name) => `/images/projects/${name}`
 
 export const assets = {
-  logo: image('logo-horizontal.png'),
-  logoSource: image('logo.png'),
+  logo: image('logo-horizontal.jpeg'),
+  logoSource: image('logo.jpeg'),
+
   visitingCard: '/v-card-horizontal.jpeg',
 }
 
