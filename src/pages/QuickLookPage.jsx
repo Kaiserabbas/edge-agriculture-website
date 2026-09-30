@@ -213,6 +213,18 @@ export default function QuickLookPage() {
             style={{ width: '180px', height: '180px', display: 'block', padding: '8px', border: '1px solid #e2e8e5', borderRadius: '12px' }}
           />
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <a href="https://edgeagriculture.netlify.app/" className="button button-secondary" style={{ fontSize: '12px', padding: '8px 14px' }}>
+              🌐 {text({ en: 'Website', ar: 'الموقع' })}
+            </a>
+            <a
+              href="https://instagram.com/edge_plants_nursery"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+              style={{ fontSize: '12px', padding: '8px 14px', background: '#fdf2f8', color: '#be185d', border: '1px solid #fbcfe8' }}
+            >
+              📸 {text({ en: 'Instagram: @EDGE_PLANTS_NURSERY', ar: 'إنستغرام: @EDGE_PLANTS_NURSERY' })}
+            </a>
             <a href="/images/edge-qr-code.png" download="EDGE-Agriculture-QR.png" className="button button-secondary" style={{ fontSize: '12px', padding: '8px 14px' }}>
               📥 {text({ en: 'Download QR', ar: 'تحميل الرمز' })}
             </a>
@@ -220,6 +232,30 @@ export default function QuickLookPage() {
               📇 {text({ en: 'Save Contact', ar: 'حفظ جهة الاتصال' })}
             </a>
           </div>
+        </div>
+
+        {/* Bottom Website & Instagram Footer */}
+        <div style={{ textAlign: 'center', marginTop: '4px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', flexWrap: 'wrap', fontSize: '14px', marginBottom: '8px' }}>
+            <a
+              href="https://edgeagriculture.netlify.app/"
+              style={{ fontWeight: 700, color: 'var(--green-strong)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+            >
+              🌐 edgeagriculture.netlify.app
+            </a>
+            <span style={{ color: '#cbd5e1' }}>|</span>
+            <a
+              href="https://instagram.com/edge_plants_nursery"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontWeight: 700, color: '#e1306c', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+            >
+              📸 @EDGE_PLANTS_NURSERY
+            </a>
+          </div>
+          <p style={{ fontSize: '12px', color: 'var(--muted)', margin: 0 }}>
+            © 2026 EDGE Agriculture • Al Barsha, Dubai, UAE
+          </p>
         </div>
 
       </div>
