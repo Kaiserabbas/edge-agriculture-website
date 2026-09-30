@@ -57,6 +57,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Quick Look & QR Code Promo Banner */}
+      <section style={{ background: 'linear-gradient(135deg, #0f392b 0%, #16552d 100%)', color: '#ffffff', padding: '32px 0', borderBottom: '1px solid #236940' }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+            <div style={{ background: '#ffffff', padding: '8px', borderRadius: '12px', flexShrink: 0, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <img src="/images/edge-qr-code.svg" alt="Scan QR Code" style={{ width: '76px', height: '76px', display: 'block' }} />
+            </div>
+            <div>
+              <span style={{ background: 'rgba(255,255,255,0.15)', color: '#86efac', padding: '3px 10px', borderRadius: '999px', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                {text({ en: 'Customer Quick Look & QR Code', ar: 'نظرة سريعة ورمز QR للعملاء' })}
+              </span>
+              <h3 style={{ color: '#ffffff', fontSize: '20px', fontWeight: 800, margin: '6px 0 4px' }}>
+                {text({ en: 'Official Business Profile & Services Brochure', ar: 'بروشور الملف التعريفي والخدمات الرسمي' })}
+              </h3>
+              <p style={{ color: '#d1fae5', fontSize: '14px', margin: 0, maxWidth: '620px' }}>
+                {text({
+                  en: 'Scan the QR code or view our digital brochure online with one-click WhatsApp contact, project highlights, and service specs.',
+                  ar: 'امسح رمز QR أو استعرض البروشور الرقمي أونلاين مع التواصل المباشر عبر واتساب وأبرز المشاريع.'
+                })}
+              </p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/quick-look" className="button" style={{ background: '#22c55e', color: '#064e3b', fontWeight: 700 }}>
+              📄 {text({ en: 'View Profile & QR', ar: 'عرض الملف والرمز' })}
+            </Link>
+            <a href="/quick-look.html" className="button" style={{ background: 'rgba(255,255,255,0.15)', color: '#ffffff', border: '1px solid rgba(255,255,255,0.3)' }}>
+              🌐 {text({ en: 'Direct Page', ar: 'الصفحة المباشرة' })}
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <SectionHeader

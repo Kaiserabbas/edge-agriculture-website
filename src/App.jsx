@@ -17,6 +17,7 @@ import ProductDetailPage from './pages/ProductDetailPage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
 import ServiceDetailPage from './pages/ServiceDetailPage.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
+import QuickLookPage from './pages/QuickLookPage.jsx'
 import { organizationSchema } from './data/siteContent.js'
 import { useLocale } from './context/LocaleContext.jsx'
 
@@ -42,6 +43,8 @@ export default function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/quick-look" element={<QuickLookPage />} />
+          <Route path="/business-profile" element={<QuickLookPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />

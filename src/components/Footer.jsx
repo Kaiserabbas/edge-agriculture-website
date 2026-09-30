@@ -20,12 +20,15 @@ export default function Footer() {
             })}
           </p>
           <div className="social-row">
-            <a href="https://instagram.com/edgeagri" aria-label="Instagram">
+            <a href="https://instagram.com/edge_plants_nursery" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Icon name="instagram" />
             </a>
             <a href="https://facebook.com/edgeagri" aria-label="Facebook">
               <Icon name="facebook" />
             </a>
+            <Link to="/quick-look" title="Quick Look & QR Code" style={{ fontSize: '13px', fontWeight: 600, color: 'var(--green-strong)', display: 'inline-flex', alignItems: 'center', gap: '4px', marginLeft: '8px' }}>
+              QR Code & Profile
+            </Link>
           </div>
         </div>
 

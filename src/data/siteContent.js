@@ -4,8 +4,11 @@ const projectImage = (name) => `/images/projects/${name}`
 export const assets = {
   logo: image('logo-horizontal.jpeg'),
   logoSource: image('logo.jpeg'),
-
   visitingCard: '/v-card-horizontal.jpeg',
+  businessBrochure: image('business-profile-brochure.jpg'),
+  overviewCard: image('edge-agriculture-card.png'),
+  qrCodeSvg: image('edge-qr-code.svg'),
+  qrCodePng: image('edge-qr-code.png'),
 }
 
 export const labels = {
@@ -18,6 +21,7 @@ export const labels = {
   portfolio: { en: 'Portfolio', ar: 'الأعمال' },
   blog: { en: 'Blog', ar: 'المدونة' },
   contact: { en: 'Contact', ar: 'اتصل بنا' },
+  quickLook: { en: 'Quick Look & QR', ar: 'نظرة سريعة ورمز QR' },
   faq: { en: 'FAQs', ar: 'الأسئلة' },
   cart: { en: 'Cart', ar: 'السلة' },
   checkout: { en: 'Checkout', ar: 'الدفع' },
@@ -48,6 +52,7 @@ export const labels = {
 
 export const navItems = [
   { to: '/', label: 'home' },
+  { to: '/quick-look', label: 'quickLook' },
   { to: '/services', label: 'services' },
   { to: '/products', label: 'products' },
   { to: '/nursery', label: 'nursery' },

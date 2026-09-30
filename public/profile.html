@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDGE Agriculture | Quick Look & Business Profile</title>
+  <meta name="description" content="EDGE Agriculture Dubai - Residential & Commercial Greening Specialists. Landscaping, smart irrigation, nursery plants, pools & civil works. Quick look profile and QR code.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0f392b;
+      --primary-light: #18523f;
+      --primary-dark: #0a261c;
+      --accent: #22c55e;
+      --gold: #d4af37;
+      --gold-light: #fef9e7;
+      --sand: #f8f6f0;
+      --ink: #1c2723;
+      --muted: #5e6d66;
+      --line: #e2e8e4;
+      --card-bg: #ffffff;
+      --radius: 16px;
+      --shadow-sm: 0 4px 12px rgba(15, 57, 43, 0.06);
+      --shadow-md: 0 12px 32px rgba(15, 57, 43, 0.1);
+      --shadow-lg: 0 24px 60px rgba(15, 57, 43, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--sand);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header Bar */
+    .top-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #ffffff;
+      padding: 24px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 4px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .brand-text h1 {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .brand-text p {
+      font-size: 12px;
+      color: #a7f3d0;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn-header {
+      background: #ffffff;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn-header:hover {
+      background: #ecfdf5;
+      transform: translateY(-1px);
+    }
+    .btn-header--gold {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    /* Quick Hero Banner */
+    .quick-hero {
+      background: linear-gradient(135deg, #0f392b 0%, #1b4b39 100%);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      color: #ffffff;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .quick-hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -80px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #86efac;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+    }
+    .quick-hero h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+    .quick-hero p {
+      font-size: 16px;
+      color: #d1fae5;
+      max-width: 760px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-main {
+      background: #22c55e;
+      color: #064e3b;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.35);
+    }
+    .btn-main:hover {
+      background: #16a34a;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Grid Layout: 2 Columns (Content + Sticky QR Code Sidebar) */
+    .profile-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .profile-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Card styling */
+    .content-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line);
+    }
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card-subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    /* Brochure Showcase */
+    .image-showcase {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+      background: #000;
+      cursor: pointer;
+    }
+    .image-showcase img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .image-showcase:hover img {
+      transform: scale(1.02);
+    }
+    .image-overlay-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(15, 57, 43, 0.85);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      pointer-events: none;
+    }
+
+    /* Tabs */
+    .tabs-nav {
+      display: flex;
+      gap: 8px;
+      background: #eef2ef;
+      padding: 6px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .tab-panel {
+      display: none;
+    }
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .service-box {
+      background: #fbfdfc;
+      border: 1px solid #e2ede6;
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 57, 43, 0.08);
+    }
+    .service-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .service-box h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .service-box ul {
+      list-style: none;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .service-box ul li {
+      padding: 3px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-box ul li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* 4-Step Process */
+    .process-timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+    @media (max-width: 640px) {
+      .process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .process-step {
+      text-align: center;
+      padding: 16px 12px;
+      background: #f7faf8;
+      border-radius: 12px;
+      border: 1px solid #e1ebe4;
+    }
+    .step-number {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      margin: 0 auto 8px;
+    }
+    .process-step h5 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .process-step p {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* Project Highlights Pills */
+    .highlights-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .highlight-pill {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sticky QR Code & Fast Contact Sidebar */
+    .qr-sidebar {
+      position: sticky;
+      top: 96px;
+    }
+    .qr-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      border: 2px solid #bbf7d0;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .qr-badge {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .qr-wrapper {
+      background: #ffffff;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid #d1fae5;
+      display: inline-block;
+      box-shadow: 0 4px 20px rgba(15, 57, 43, 0.08);
+      margin-bottom: 14px;
+    }
+    .qr-wrapper img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    .qr-url {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      word-break: break-all;
+      background: #f8faf9;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px dashed #cbd5e1;
+      margin-bottom: 16px;
+    }
+    .qr-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn-qr-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-qr-action--primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-qr-action--primary:hover {
+      background: var(--primary-light);
+    }
+    .btn-qr-action--outline {
+      background: #ffffff;
+      color: var(--ink);
+      border: 1px solid #cbd5e1;
+    }
+    .btn-qr-action--outline:hover {
+      background: #f1f5f9;
+    }
+
+    /* Contact Details Card */
+    .contact-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line);
+    }
+    .contact-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f1f5f9;
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #ecfdf5;
+      color: #065f46;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .contact-info {
+      flex: 1;
+    }
+    .contact-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .contact-val {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Modal / Lightbox for Fullscreen Image */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .lightbox-modal.active {
+      display: flex;
+    }
+    .lightbox-content {
+      max-width: 95vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #ffffff;
+      background: rgba(255,255,255,0.2);
+      border: none;
+      font-size: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.4);
+    }
+
+    /* Footer */
+    .footer-bar {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 30px;
+    }
+    .footer-bar a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* Copy Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #0f392b;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 10000;
+      pointer-events: none;
+      border: 1px solid #34d399;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-header">
+    <div class="header-inner">
+      <a href="https://edgeagriculture.netlify.app/" class="brand-wrap">
+        <img src="/images/logo-horizontal.jpeg" alt="EDGE Agriculture Logo" class="brand-logo" onerror="this.src='/favicon.svg'">
+        <div class="brand-text">
+          <h1>EDGE Agriculture</h1>
+          <p>Dubai Landscaping & Greening Specialists</p>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="https://edgeagriculture.netlify.app/" class="btn-header btn-header--gold">
+          🌐 Visit Official Store
+        </a>
+        <a href="tel:+971502424666" class="btn-header">
+          📞 +971 50 2424666
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Quick Hero Banner -->
+    <section class="quick-hero">
+      <span class="badge">🌿 Business Profile & Quick Look</span>
+      <h2>A One-Stop Green Solution for Dubai</h2>
+      <p>
+        Villa landscaping, smart irrigation, nursery plants, custom pools, decks, pergolas, and premium garden supplies. Scan our QR code or explore our digital profile below.
+      </p>
+      <div class="quick-actions">
+        <a href="https://edgeagriculture.netlify.app/" class="btn-main">
+          🚀 Open Full Website (edgeagriculture.netlify.app)
+        </a>
+        <a href="https://wa.me/971502424666?text=Hello%20EDGE%20Agriculture%2C%20I%20saw%20your%20Business%20Profile%20and%20would%20like%20a%20free%20consultation" class="btn-outline" target="_blank" rel="noopener noreferrer">
+          💬 WhatsApp Naseer (+971 50 2424666)
+        </a>
+        <a href="/edge-agriculture.vcf" download class="btn-outline">
+          📇 Save Contact to Phone
+        </a>
+      </div>
+    </section>
+
+    <!-- 2-Column Layout -->
+    <div class="profile-layout">
+      
+      <!-- Left Column: Visual Profiles & Service Specs -->
+      <div class="profile-main">
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-nav">
+          <button class="tab-btn active" onclick="switchTab('brochure', this)">📄 Business Profile Brochure</button>
+          <button class="tab-btn" onclick="switchTab('card', this)">💳 Quick Look Card</button>
+          <button class="tab-btn" onclick="switchTab('services', this)">🛠️ Services & Process</button>
+        </div>
+
+        <!-- Tab 1: Full Brochure -->
+        <div id="tab-brochure" class="tab-panel active">
+          <div class="content-card">
+            <div class="card-title">
+              <span>📖</span> Official Business Profile Brochure
+            </div>
+            <p class="card-subtitle">
+              Residential & Commercial Greening Specialists — Complete villa landscaping, smart irrigation, pools & garden supplies. Click image to expand in high resolution.
+            </p>
+
+            <div class="image-showcase" onclick="openLightbox('/images/business-profile-brochure.jpg', 'EDGE Agriculture Official Business Profile Brochure')">
+              <img src="/images/business-profile-brochure.jpg" alt="EDGE Agriculture Business Profile Brochure">
+              <div class="image-overlay-hint">
+                🔍 Click to View Fullscreen
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+              <a href="/images/business-profile-brochure.jpg" download="EDGE-Agriculture-Business-Profile.jpg" class="btn-header" style="background: #f1f5f9; color: var(--primary);">
+                📥 Download Brochure Image
+              </a>
+              <a href="https://edgeagriculture.netlify.app/portfolio" class="btn-header" style="background: #ecfdf5; color: #065f46;">
+                🌿 View Project Portfolio Online
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Quick Look Card -->
+        <div id="tab-card" class="tab-panel">
+          <div class="content-card">
+            <div class="card-title">
+              <span>💳</span> Executive Quick Look Flyer / Card
+            </div>
+            <p class="card-subtitle">
+              Compact overview of core offerings, Instagram scan code, and contact information. Click to expand.
+            </p>
+
+            <div class="image-showcase" onclick="openLightbox('/images/edge-agriculture-card.png', 'EDGE Agriculture Executive Overview Card')">
+              <img src="/images/edge-agriculture-card.png" alt="EDGE Agriculture Executive Overview Card">
+              <div class="image-overlay-hint">
+                🔍 Click to View Fullscreen
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+              <a href="/images/edge-agriculture-card.png" download="EDGE-Agriculture-Flyer.png" class="btn-header" style="background: #f1f5f9; color: var(--primary);">
+                📥 Download Card Image
+              </a>
+              <a href="https://instagram.com/edge_plants_nursery" target="_blank" rel="noopener noreferrer" class="btn-header" style="background: #fdf2f8; color: #be185d;">
+                📸 Follow @EDGE_PLANTS_NURSERY
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Detailed Services & Process Breakdown -->
+        <div id="tab-services" class="tab-panel">
+          <div class="content-card">
+            <div class="card-title">
+              <span>🌱</span> Core Specializations
+            </div>
+            <p class="card-subtitle">
+              Engineered for UAE climate conditions, residential villas, and commercial landscapes.
+            </p>
+
+            <div class="services-grid">
+              <div class="service-box">
+                <span class="service-icon">🏡</span>
+                <h4>Landscaping Services</h4>
+                <ul>
+                  <li>Complete Villa Landscaping</li>
+                  <li>Softscape Design</li>
+                  <li>Precision Implementation</li>
+                  <li>Lawn & Turf Laying</li>
+                </ul>
+              </div>
+
+              <div class="service-box">
+                <span class="service-icon">💧</span>
+                <h4>Irrigation Solutions</h4>
+                <ul>
+                  <li>Smart Automated Systems</li>
+                  <li>Water Efficiency Management</li>
+                  <li>Modern Valves & Timers</li>
+                  <li>Drip & Sprinkler Networks</li>
+                </ul>
+              </div>
+
+              <div class="service-box">
+                <span class="service-icon">🏊</span>
+                <h4>Pools & Civil Works</h4>
+                <ul>
+                  <li>Custom Pools & Waterfalls</li>
+                  <li>Pergolas, Decks & Gazebos</li>
+                  <li>Hardscaping & Stone Paving</li>
+                  <li>Modern Outdoor Living</li>
+                </ul>
+              </div>
+
+              <div class="service-box">
+                <span class="service-icon">🪴</span>
+                <h4>Garden Supplies & Nursery</h4>
+                <ul>
+                  <li>Indoor Plants & Climbers</li>
+                  <li>Palms, Trees & Groundcover</li>
+                  <li>Fertilizers, Potting Soils</li>
+                  <li>Modern Planters & Tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Process Section -->
+        <div class="content-card">
+          <div class="card-title">
+            <span>🔄</span> Our 4-Step Proven Process
+          </div>
+          <p class="card-subtitle">
+            From initial site consultation to turnkey maintenance, we manage every phase seamlessly.
+          </p>
+
+          <div class="process-timeline">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h5>Consult</h5>
+              <p>Site inspection, water assessment & concept planning</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h5>Design</h5>
+              <p>Tailored 2D/3D layouts, plant palettes & irrigation maps</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h5>Build</h5>
+              <p>Turnkey execution, planting, civil works & installation</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h5>Maintain</h5>
+              <p>Seasonal trimming, soil feeding & system tuning</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Highlights Section -->
+        <div class="content-card">
+          <div class="card-title">
+            <span>🏆</span> Signature Project Highlights
+          </div>
+          <p class="card-subtitle">
+            Notable recent installations across Dubai:
+          </p>
+          <div class="highlights-list">
+            <span class="highlight-pill">🌴 Villa Garden Transformation</span>
+            <span class="highlight-pill">🏢 Commercial Office Greenery</span>
+            <span class="highlight-pill">🏙️ Rooftop Oasis</span>
+            <span class="highlight-pill">🌺 Custom Residential Courtyards</span>
+            <span class="highlight-pill">🏢 Company Garden Greening</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Sticky QR Code Card + Contact Information -->
+      <aside class="qr-sidebar">
+
+        <!-- QR Code Card -->
+        <div class="qr-card">
+          <span class="qr-badge">Quick Look QR Code</span>
+          <h3 style="font-size: 18px; color: var(--primary); margin-bottom: 6px;">Customer Instant Access</h3>
+          <p style="font-size: 12px; color: var(--muted); margin-bottom: 14px;">
+            Scan with any phone camera to visit our store, browse live catalog & order directly:
+          </p>
+
+          <div class="qr-wrapper">
+            <img src="/images/edge-qr-code.svg" alt="EDGE Agriculture QR Code">
+          </div>
+
+          <div class="qr-url">
+            https://edgeagriculture.netlify.app/
+          </div>
+
+          <div class="qr-buttons">
+            <a href="https://edgeagriculture.netlify.app/" class="btn-qr-action btn-qr-action--primary">
+              🚀 Open Website Link
+            </a>
+            <button onclick="copyWebsiteLink()" class="btn-qr-action btn-qr-action--outline">
+              📋 Copy Website URL
+            </button>
+            <a href="/images/edge-qr-code.png" download="EDGE-Agriculture-QR.png" class="btn-qr-action btn-qr-action--outline">
+              📥 Save QR Image (PNG)
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="contact-card">
+          <h4>📞 Direct Contact & Inquiries</h4>
+
+          <a href="tel:+971502424666" class="contact-row">
+            <div class="contact-icon">📱</div>
+            <div class="contact-info">
+              <div class="contact-label">Call Consultant (Naseer)</div>
+              <div class="contact-val">+971 50 2424666</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/971502424666" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <div class="contact-icon" style="background: #dcfce7; color: #15803d;">💬</div>
+            <div class="contact-info">
+              <div class="contact-label">WhatsApp Quick Chat</div>
+              <div class="contact-val">+971 50 2424666</div>
+            </div>
+          </a>
+
+          <a href="https://maps.google.com/?q=Al+Barsha+Dubai+UAE" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <div class="contact-icon">📍</div>
+            <div class="contact-info">
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Al Barsha, AbdurRahman Mosque, Dubai, UAE</div>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/edge_plants_nursery" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <div class="contact-icon" style="background: #fdf2f8; color: #be185d;">📸</div>
+            <div class="contact-info">
+              <div class="contact-label">Instagram Nursery</div>
+              <div class="contact-val">@EDGE_PLANTS_NURSERY</div>
+            </div>
+          </a>
+
+          <div style="margin-top: 16px;">
+            <a href="/edge-agriculture.vcf" download class="btn-qr-action btn-qr-action--primary" style="width: 100%; text-align: center;">
+              📇 Download vCard (.vcf)
+            </a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+      <p>
+        © 2026 EDGE Agriculture Dubai. All Rights Reserved. • 
+        Official Link: <a href="https://edgeagriculture.netlify.app/">https://edgeagriculture.netlify.app/</a>
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Fullscreen Preview">
+    <p id="lightbox-caption" style="color: #ffffff; margin-top: 12px; font-size: 14px; font-weight: 500;"></p>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Link copied to clipboard!</div>
+
+  <script>
+    // Tab switching
+    function switchTab(tabKey, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      
+      btn.classList.add('active');
+      const target = document.getElementById('tab-' + tabKey);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+
+    // Lightbox functions
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      img.src = src;
+      cap.textContent = caption || '';
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+        const modal = document.getElementById('lightbox');
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Copy link helper
+    function copyWebsiteLink() {
+      const url = "https://edgeagriculture.netlify.app/";
+      navigator.clipboard.writeText(url).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+      }).catch(() => {
+        prompt("Copy this link:", url);
+      });
+    }
+
+    // ESC key closes lightbox
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('lightbox');
+        if (modal.classList.contains('active')) {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
