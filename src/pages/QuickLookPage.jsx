@@ -2,10 +2,13 @@ import { useState } from 'react'
 import Icon from '../components/Icon.jsx'
 import usePageMeta from '../components/usePageMeta.js'
 import { useLocale } from '../context/LocaleContext.jsx'
+import { contactInfo } from '../data/siteContent.js'
 
 export default function QuickLookPage() {
   const { text } = useLocale()
   const [zoomImg, setZoomImg] = useState(null)
+  const mapUrl = 'https://maps.app.goo.gl/JQmdXUe2tG9kfsZX8'
+  const mapEmbedUrl = 'https://maps.google.com/maps?q=25.113461%2C55.210637&output=embed'
 
   usePageMeta(
     { en: 'Business Card & Profile | EDGE Agriculture Dubai', ar: 'بطاقة العمل والملف التعريفي | EDGE Agriculture دبي' },
@@ -82,6 +85,43 @@ export default function QuickLookPage() {
             </a>
           </div>
         </div>
+
+        {/* Location */}
+        <section>
+          <div style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-strong)', marginBottom: '8px', paddingLeft: '4px', letterSpacing: '0.05em' }}>
+            <Icon name="mapPin" size={15} /> {text({ en: 'Location', ar: 'الموقع' })}
+          </div>
+          <div style={{
+            overflow: 'hidden',
+            background: '#ffffff',
+            borderRadius: '16px',
+            border: '1px solid var(--line)',
+            boxShadow: '0 6px 20px rgba(15, 57, 43, 0.06)'
+          }}>
+            <iframe
+              title={text({ en: 'EDGE Agriculture location map', ar: 'خريطة موقع EDGE Agriculture' })}
+              src={mapEmbedUrl}
+              style={{ width: '100%', height: '240px', display: 'block', border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div style={{ padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
+              <p style={{ color: 'var(--muted)', fontSize: '14px', margin: 0 }}>
+                {text(contactInfo.address)}
+              </p>
+              <a
+                href={mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button-secondary"
+                style={{ justifyContent: 'center', whiteSpace: 'nowrap' }}
+              >
+                {text({ en: 'Get directions', ar: 'احصل على الاتجاهات' })}
+                <Icon name="mapPin" size={16} />
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* FIRST: Business Card */}
         <section>
