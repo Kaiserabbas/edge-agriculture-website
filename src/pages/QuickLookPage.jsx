@@ -42,9 +42,6 @@ export default function QuickLookPage() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <img src="/images/logo-horizontal.jpeg" alt="EDGE Agriculture" style={{ height: '36px', width: 'auto' }} />
-            <span style={{ fontSize: '15px', fontWeight: 800, color: 'var(--green-strong)', textTransform: 'uppercase' }}>
-              EDGE Agriculture Dubai
-            </span>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
             <a
